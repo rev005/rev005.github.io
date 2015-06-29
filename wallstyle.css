@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+.inline{
+		height: 200px;
+		/*height: 70px;*/
+		/*background-color: green;*/
+		}
+.test{
+	background-color:yellow;
+}
+
+ul.no-bullets
+{
+	list-style-type: none;
+}
+
+.thumbnail
+{
+
+	width:150px;
+	height:230px;
+	overflow: hidden;
+	margin: 20px;
+	border: grey solid 1px;
+}
+
+.img-responsive{
+	height: 100%;
+}
+
+
+.imgset img {
+	min-width: 100%;
+    min-height: 100%;
+}
+
+/*-----------Page styling---------*/
+.page-img{
+	border: 1px solid #CDCDCD;
+	/*max-width: auto;*/
+}
+.manga-page{
+	/*border: 1px solid red;*/
+	vertical-align: middle;
+	border: 0px none;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+
+
+}
