@@ -1,0 +1,107 @@
+.navbar-default
+{
+	background-color:#484648; margin-bottom:0px; border:none; border-radius: 0px
+}
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+/* test*/
+.font-dosis
+{
+	font-family: 'Dosis', sans-serif;
+}
+.module-about
+{
+	background-color: #36C3E5;
+	height: auto;
+}
+.module-work
+{
+	/*background-color: #222222;*/
+	background-image: url("../images/black_bg_pattern.png");
+	background-size: cover;
+	color: #ffffff;
+	height: auto;
+}
+.module-skills
+{
+	background-color: #fcb533;
+	height: auto;
+}
+.module-contact
+{
+	background-color: #fcb533;
+	height: auto;
+}
+
+.circle_div
+{
+	/*background-color: red;*/
+	background-image: url("../images/13.jpg");
+	opacity: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border: 5px solid #36C3E5;
+	background-size: cover;
+	border-radius: 50%;
+	width:  270px;
+	height: 270px;
+	opacity: 50%;
+
+}
+
+ul.no-bullets
+{
+	list-style-type: none;
+}
+
+/************Animation button for Work module**************/
+.button 
+{
+    width: 50px;
+    height: 65px;
+    margin: 100px auto;
+    
+}
+
+.sprite-anim-go 
+{
+    width: 50px;
+    height: 65px;
+    background-image: url("../images/go.png");
+    opacity: 0;
+}
+
+.circle_div:hover .sprite-anim-go, .sprite-anim-go-animate 
+{
+	opacity: 1;
+    animation: 1.7s steps(51, end) 0s normal none infinite running sprite-animate-go;
+}
+
+@keyframes sprite-animate-go 
+{
+	0% 
+	{
+    	background-position: 0px 0px;
+	}
+	100% 
+	{
+    	background-position: -2550px 0px;
+	}
+}
+/**********************************************************/
+.footer
+{
+	background-image: url("../images/city.png");
+	background-repeat:repeat;
+	height: 280px ;
+	width: auto;
+}
+.footbase{
+	width: 100%;
+	height: 200px;
+	background-color: #222222;
+}
