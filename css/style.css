@@ -12,6 +12,12 @@ html, body {
 {
 	font-family: 'Dosis', sans-serif;
 }
+
+.module_head h1
+{
+  font-size: 40px;
+  /*padding-bottom: 80px;*/
+}
 .module-about
 {
 	background-color: #36C3E5;
@@ -19,8 +25,9 @@ html, body {
 }
 .module-work
 {
-	/*background-color: #222222;*/
+
 	background-image: url("../images/black_bg_pattern.png");
+	background-color: #222222;
 	background-size: cover;
 	color: #ffffff;
 	height: auto;
@@ -38,9 +45,9 @@ html, body {
 
 .circle_div
 {
-	/*background-color: red;*/
-	background-image: url("../images/13.jpg");
-	opacity: 50%;
+	position: relative;
+  overflow: hidden;
+	opacity: 1;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
@@ -50,8 +57,8 @@ html, body {
 	width:  270px;
 	height: 270px;
 	opacity: 50%;
-
 }
+.workbg_opacity:hover{opacity: 0.3;}
 
 ul.no-bullets
 {
@@ -61,6 +68,9 @@ ul.no-bullets
 /************Animation button for Work module**************/
 .button 
 {
+    position: absolute;
+    top: 13px;
+    left: 105px;
     width: 50px;
     height: 65px;
     margin: 100px auto;
@@ -74,7 +84,8 @@ ul.no-bullets
     background-image: url("../images/go.png");
     opacity: 0;
 }
-
+r
+.work_img:hover background-image: {opacity: 0.5;}
 .circle_div:hover .sprite-anim-go, .sprite-anim-go-animate 
 {
 	opacity: 1;
@@ -96,12 +107,34 @@ ul.no-bullets
 .footer
 {
 	background-image: url("../images/city.png");
-	background-repeat:repeat;
-	height: 280px ;
-	width: auto;
+  /*background-color: red;*/
+	background-repeat: repeat;
+	height: 270px ;
+	width: ;
+  margin: 0px;
+  padding: 0px;
+
 }
 .footbase{
+  padding: 0px;
+  margin: 0px;
 	width: 100%;
-	height: 200px;
+	height: 100px;
 	background-color: #222222;
+}
+
+/**********map******************/
+
+.circle_map
+{
+  overflow: hidden;
+  border: 5px solid #36C3E5;
+  background-size:cover; ;
+  border-radius: 50%;
+  width:  270px;
+  height: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
