@@ -2,6 +2,58 @@
 {
 	background-color:#484648; margin-bottom:0px; border:none; border-radius: 0px
 }
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+/**************nav bar******************/
+
+.nav-option
+{
+  color: #ffffff;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-option:hover
+{
+  text-decoration: none;
+  /*color:green;*/
+}
+
+
+.pill
+{
+  width: 150px;
+  height: auto;
+  border-style: ;
+  border-radius: 5px;
+  background-color: ;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pill:hover
+{
+  width: 150px;
+  height: auto;
+  border-style: ;
+  border-radius: 5px;
+  background-color: #36C3E5;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+
+button
+{
+
+  background-color: transparent;
+  border:none;
+  font-size: 25px;
+  float: right;
+  margin-right: 10px;
+
+}
 
 .top
 {
@@ -18,10 +70,10 @@
 
 .margin
 { 
-
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
+
 .menu
 {
   background-color: black;
@@ -36,15 +88,11 @@
   background-color: ;
   width: 100%;
   height:60px;
+  position: relative;
 }
 
+/**********************************************************************/
 
-html, body {
-  width: auto !important;
-  overflow-x: hidden !important;
-}
-
-/* test*/
 .font-dosis
 {
 	font-family: 'Dosis', sans-serif;
@@ -58,7 +106,7 @@ html, body {
 .module-about
 {
 	background-color: #36C3E5;
-	height: 300px;
+	height: auto;
 }
 .module-work
 {
@@ -165,13 +213,35 @@ r
 .circle_map
 {
   overflow: hidden;
-  border: 5px solid #36C3E5;
-  background-size:cover; ;
   border-radius: 50%;
-  width:  270px;
-  height: 270px;
+  width:  320px;
+  height: 320px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  margin-bottom: 20px;
 }
+
+.test
+{
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  padding: 8px;
+  border: 4px solid #222222;
+}
+/*************test**************/
+.myname {
+  font-family: 'Dosis', sans-serif;
+  font-size: 92px;
+  padding: 80px 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
+.myname.elegantshadow {
+  color: #131313;
+
+  letter-spacing: .15em;
+  text-shadow: 1px -1px 0 #767676, -28px 56px 1px #e4e3e2;
+}
+
