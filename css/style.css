@@ -44,12 +44,19 @@ html, body {
   color: black;
 }
 
+.initial
+{
+  width: 90px;
+  height: 90px;
+  float: left;
+}
+
 button
 {
 
   background-color: transparent;
   border:none;
-  font-size: 25px;
+  font-size: 30px;
   float: right;
   margin-right: 10px;
 
@@ -244,4 +251,7 @@ r
   letter-spacing: .15em;
   text-shadow: 1px -1px 0 #767676, -28px 56px 1px #e4e3e2;
 }
+/*****************test2******************/
 
+
+/***********************************************/
