@@ -128,6 +128,10 @@ button
 	font-family: 'Dosis', sans-serif;
 }
 
+.module_head
+{
+  padding-top: 20px;
+}
 .module_head h1
 {
   font-size: 40px;
@@ -138,6 +142,32 @@ button
 	background-color: #36C3E5;
 	height: 600px;
 }
+
+/*********skills module*************/
+.module-skills
+{
+  background-color: #fcb533;
+  height: auto;
+}
+
+.module-skills h3
+{
+  text-align: justify;
+  padding: 20px;
+}
+.page-header
+{
+  border:none;
+  padding-left: 10px;
+  margin: none;
+}
+
+.progress
+{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/***************************************/
 .module-work
 {
 
@@ -147,11 +177,7 @@ button
 	color: #ffffff;
 	height: auto;
 }
-.module-skills
-{
-	background-color: #fcb533;
-	height: auto;
-}
+
 .module-contact
 {
 	background-color: #fcb533;
@@ -379,45 +405,12 @@ body {
 .tst{border: px solid black;}
 /***********************************************/
 
-/***************weed*******************
-.weed{
-  width: 80px;
-  height: 100px;  
-  position: absolute;
-  bottom: -60px;
-  z-index: 0;
-  padding-right: ;
-}
-.weed1{
-  width: 80px;
-  height: 250px;  
-  position: absolute;
-  bottom: -60px;
-  z-index: 0;
-  padding-right: ;
-}
-.weed2{
-  width: 80px;
-  height: 70px;  
-  position: absolute;
-  bottom: -60px;
-  z-index: 0;
-  padding-right: ;
-}
-.weed3{
-  width: 80px;
-  height: 250px;  
-  position: absolute;
-  bottom: -60px;
-  z-index: 0;
-  padding-right: ;
-} */
-
+/***************weed*******************/
 .weed_posi
 {
   position: absolute;
   top: 330px;
-  width: 1500px;
+  width: 100%;
   height: 300px;
 }
 
