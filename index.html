@@ -9,9 +9,11 @@
 <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+<link href="css/bubbles.css" rel="stylesheet" type="text/css" />
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src=""></script>
 </head>
 
 <body>
@@ -51,11 +53,10 @@
   </div>
 </div>
 
-
+<!-- ******************************Home module*****************-->  
 	<div class="row module-about" id="s1">
-    <!--<div  class='elegantshadow myname'>REVANTH BYSANI</div>-->
-      <div class=" col-md-12 col-sm-12 gaptop">
-      <!-- For Firefox-->
+      <!--<div class=" col-md-12 col-sm-12 gaptop">
+
         <div class="col-md-12 col-sm-12 gap">
           <div class="col-md-12 col-xs-12">
             <div class="loading loading-2 wave wave-2 tst">
@@ -64,7 +65,7 @@
             </div>
           </div>
         </div>
-      <!-- For Firefox-->
+
         <div class="col-md-12 col-sm-12 gap2">
           <div class="col-md-12 col-xs-12">
             <div class="loading loading-2 wave wave-2 tst">
@@ -73,22 +74,21 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>-->
+    <!--******************-->
+<div class="bubbles">
+    <div class="col-md-12 col-sm-12 page-header water-font">
+      <p class="">Revanth</p>
+      <p class="">BysanI</p>
+    </div>
 
-      <!--weed-->
+    <div class="col-md-3 col-sm-4 col-xs-6  "><img src="images/weed2.png"></div>
+    <div class="col-md-3 col-sm-4 hidden-xs "><img src="images/weed.png"></div>
+    <div class="col-md-3 col-sm-4 col-xs-6 "><img src="images/weed3.png"></div>
+    <div class="col-md-3 hidden-sm hidden-xs "><img src="images/weed2.png"></div>
+</div>
+</div>
 
-        <div class="weed_posi">
-          <div class="col-md-3 col-sm-4 col-xs-4 weed "><img src="images/weed2.png"></div>
-          <div class="col-md-3 col-sm-4 col-xs-4 weed1"><img src="images/weed.png"></div>
-          <div class="col-md-3 col-sm-4 col-xs-4 weed2"><img src="images/weed3.png"></div>
-          <div class="col-md-3 hidden-sm hidden-xs weed3"><img src="images/weed2.png"></div>
-
-        </div>
-
-      <!--****-->
-
-
-	</div>
 	
 <!-- ******************************Skills module*****************-->  
   <div class="row module-skills" id="s2">
@@ -248,6 +248,87 @@ $(document).ready(function(){
         $(".menu").toggle();
     });
 });
+</script>
+
+<script>
+var $bubbles = $('.bubbles');
+
+function bubbles() {
+  
+  // Settings
+  var min_bubble_count = 10, // Minimum number of bubbles
+      max_bubble_count = 20, // Maximum number of bubbles
+      min_bubble_size = 7, // Smallest possible bubble diameter (px)
+      max_bubble_size = 12; // Largest possible bubble diameter (px)
+  
+  // Calculate a random number of bubbles based on our min/max
+  var bubbleCount = min_bubble_count + Math.floor(Math.random() * (max_bubble_count + 1));
+  
+  // Create the bubbles
+  for (var i = 0; i < bubbleCount; i++) {
+    $bubbles.append('<div class="bubble-container"><div class="bubble"></div></div>');
+  }
+  
+  // Now randomise the various bubble elements
+  $bubbles.find('.bubble-container').each(function(){
+    
+    // Randomise the bubble positions (0 - 100%)
+    var pos_rand = Math.floor(Math.random() * 101);
+    
+    // Randomise their size
+    var size_rand = min_bubble_size + Math.floor(Math.random() * (max_bubble_size + 1));
+    
+    // Randomise the time they start rising (0-15s)
+    var delay_rand = Math.floor(Math.random() * 16);
+    
+    // Randomise their speed (3-8s)
+    var speed_rand = 10 + Math.random() * 2;
+    
+    // Cache the this selector
+    var $this = $(this);
+    
+    // Apply the new styles
+    $this.css({
+      'left' : pos_rand + '%',
+      
+      '-webkit-animation-duration' : speed_rand + 's',
+      '-moz-animation-duration' : speed_rand + 's',
+      '-ms-animation-duration' : speed_rand + 's',
+      'animation-duration' : speed_rand + 's',
+      
+      '-webkit-animation-delay' : delay_rand + 's',
+      '-moz-animation-delay' : delay_rand + 's',
+      '-ms-animation-delay' : delay_rand + 's',
+      'animation-delay' : delay_rand + 's'
+    });
+    
+    $this.children('.bubble').css({
+      'width' : size_rand + 'px',
+      'height' : size_rand + 'px'
+    });
+    
+  });
+}
+
+// In case users value their laptop battery life
+// Allow them to turn the bubbles off
+$('.bubble-toggle').click(function(){
+  if($bubbles.is(':empty')) {
+    bubbles();
+    $bubbles.show();
+    $(this).text('Bubbles Off');
+  } else {
+    $bubbles.fadeOut(function(){
+      $(this).empty();
+    });
+    $(this).text('Bubbles On');
+  }
+  
+  return false;
+});
+
+bubbles();
+
 </script>
 
 </body>
