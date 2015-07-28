@@ -13,7 +13,7 @@ html, body {
 .water-font {
     font-family: waterfont;
     color: #ffffff;
-    font-size: 150px;
+    font-size: 140px;
     text-align: center;
 }
 
@@ -21,19 +21,10 @@ html, body {
 /***************************************/
 @media all and (max-width: 500px){ /* screen size until 500px */
     .water-font {
-        font-size: 60px; /* 0.8x default size */
+        font-size: 80px; /* 0.8x default size */
         }
-    .loading-2
-    {
-      width: 400px;
-    }
-    .loading-2-text
-    {
-      width: 400px;
-    }
-    .loading-3-text
-    {
-      width: 400px;
+    .initial{
+      float: right;
     }
 }
 /**************nav bar******************/
@@ -165,18 +156,24 @@ button
 }
 
 /*********skills module*************/
+.align_para{ 
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 .module-skills
 {
   background-color: #fcb533;
   height: auto;
 }
 
-.module-skills h3
+.module-skills h3,h4
 {
   text-align: justify;
   padding: 20px;
   word-spacing: 3px;
-  font-weight: 20px;
 }
 .page-header
 {
@@ -190,6 +187,45 @@ button
   margin-left: 20px;
   margin-right: 20px;
 }
+
+.small-round
+{
+  border-radius: 50%;
+  width:  80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 3px solid #222222;
+  padding: 4px;
+}
+
+
+.skillset 
+{
+color: #16a085;
+font-family: 'Source Sans Pro',sans-serif;;
+}
+
+.container1 {
+  padding: 10px 50px;
+  text-align: center;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /***************************************/
 .module-work
 {
@@ -212,15 +248,14 @@ button
 	position: relative;
   overflow: hidden;
 	opacity: 1;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
 	border: 5px solid #36C3E5;
-	background-size: cover;
 	border-radius: 50%;
-	width:  270px;
-	height: 270px;
+	width:  200px;
+	height: 200px;
 	opacity: 50%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .workbg_opacity:hover{opacity: 0.3;}
 
@@ -229,16 +264,20 @@ ul.no-bullets
 	list-style-type: none;
 }
 
+.thumb
+{
+  width:200px;
+  height: 200px;
+}
+
 /************Animation button for Work module**************/
 .button 
 {
     position: absolute;
-    top: 13px;
-    left: 105px;
+    top: 66px;
+    left: 71px;
     width: 50px;
-    height: 65px;
-    margin: 100px auto;
-    
+    height: 65px;    
 }
 
 .sprite-anim-go 
@@ -248,8 +287,7 @@ ul.no-bullets
     background-image: url("../images/go.png");
     opacity: 0;
 }
-r
-.work_img:hover background-image: {opacity: 0.5;}
+
 .circle_div:hover .sprite-anim-go, .sprite-anim-go-animate 
 {
 	opacity: 1;

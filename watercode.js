@@ -1,12 +1,13 @@
+<script>
 var $bubbles = $('.bubbles');
 
 function bubbles() {
   
   // Settings
-  var min_bubble_count = 20, // Minimum number of bubbles
-      max_bubble_count = 60, // Maximum number of bubbles
-      min_bubble_size = 3, // Smallest possible bubble diameter (px)
-      max_bubble_size = 12; // Maximum bubble blur amount (px)
+  var min_bubble_count = 10, // Minimum number of bubbles
+      max_bubble_count = 20, // Maximum number of bubbles
+      min_bubble_size = 7, // Smallest possible bubble diameter (px)
+      max_bubble_size = 12; // Largest possible bubble diameter (px)
   
   // Calculate a random number of bubbles based on our min/max
   var bubbleCount = min_bubble_count + Math.floor(Math.random() * (max_bubble_count + 1));
@@ -29,10 +30,7 @@ function bubbles() {
     var delay_rand = Math.floor(Math.random() * 16);
     
     // Randomise their speed (3-8s)
-    var speed_rand = 3 + Math.floor(Math.random() * 9);
-    
-    // Random blur
-    var blur_rand = Math.floor(Math.random() * 3);
+    var speed_rand = 10 + Math.random() * 2;
     
     // Cache the this selector
     var $this = $(this);
@@ -49,12 +47,7 @@ function bubbles() {
       '-webkit-animation-delay' : delay_rand + 's',
       '-moz-animation-delay' : delay_rand + 's',
       '-ms-animation-delay' : delay_rand + 's',
-      'animation-delay' : delay_rand + 's',
-      
-      '-webkit-filter' : 'blur(' + blur_rand  + 'px)',
-      '-moz-filter' : 'blur(' + blur_rand  + 'px)',
-      '-ms-filter' : 'blur(' + blur_rand  + 'px)',
-      'filter' : 'blur(' + blur_rand  + 'px)',
+      'animation-delay' : delay_rand + 's'
     });
     
     $this.children('.bubble').css({
@@ -83,3 +76,4 @@ $('.bubble-toggle').click(function(){
 });
 
 bubbles();
+</script>
