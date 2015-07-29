@@ -150,9 +150,17 @@ button
 }
 .module-about
 {
+  width: auto;
 	background-color: #36C3E5;
 	height: auto;
   padding-top: 60px;
+}
+
+.resume
+{
+  float:right;
+  width: 60px;
+  height: 60px;
 }
 
 /*********skills module*************/
@@ -349,95 +357,30 @@ ul.no-bullets
 /****************************************/ 
 
 /*****************Water Fonts Title******************/
-body {
-  background: #141414;
-  width: 100%;
-  height: 100%;
-}
-
-.loading {
-  height: px;
-  line-height: 110px;
-  vertical-align: bottom;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100px;
-  bottom: 0;
-  display: block;
-}
-
-.loading-2 {
-  top: 300px;
-  width: 600px;
-  height: 150px;
-  font-size: 0;
-  background: rgba(255, 255, 255, 0.06);
-  margin: 0 auto;
-}
-
-.ff {
-  position: absolute;
-  font-size: 12pt;
-  top: -50px;
-  color: white;
-  line-height: 12pt;
-}
-
-.loading-2-text {
-  background-image: url("../images/revanth.png"); /*http://i.imgur.com/cZc1otp.png*/
-  width: 600px;
-  height: 150px;
-  display: inline-block;
-}
-.loading-3-text {
-  background-image: url("../images/bysani.png"); /*http://i.imgur.com/cZc1otp.png*/
-  width: 600px;
-  height: 150px;
-  display: inline-block;
-}
-
-.gap
+.module-about1
 {
-  max-width: auto;
-  margin-bottom: 170px;
-  margin-left: auto;
-  margin-right: auto;
+  background-image: url("../images/black.png");
+  background-color: #222222;
+  background-size: cover;
+  color: #ffffff;
+  height: auto;
 }
 
-.gaptop
+.about_title
+{ 
+  font-size: 25px;
+  font-weight:500;
+  padding: 30px;
+}
+
+.par-set
 {
-  max-width: auto;
-  position:absolute;
-  top: -110px;
-}
+  text-align: justify;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  word-spacing: 2px;
 
-@keyframes wave-animation {
-  0% {
-    background-position: 0 bottom;
-  }
-  100% {
-    background-position: 200px bottom;
-  }
-}
-@keyframes loading-animation {
-  0% {
-    background-size: 200px 0px;
-  }
-  100% {
-    background-size: 200px 150px;
-  }
-}
-.wave {
-  background-image: url("http://i.imgur.com/uFpLbYt.png");
 
-  color: transparent;
-  text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
-  animation: wave-animation 1s infinite linear, loading-animation 5s linear alternate;
-  background-size: 200px 150px;
-  background-repeat: repeat-x;
-  opacity: 1;
 }
-
-.tst{border: 1px solid black;}
-/***********************************************/

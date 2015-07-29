@@ -8,19 +8,18 @@
 
 <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
-<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 <link href="css/bubbles.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src=""></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><!--yay-->
 </head>
 
 <body>
 <div class="container-fluid font-dosis">
 
-<div class="topp">
+<div class="row topp">
   <div class="row ">
     <div class="col-md-12 col-sm-12 menu">
       <div class="row">
@@ -56,12 +55,12 @@
 
 <!-- ******************************Home module*****************-->  
 	<div class="row module-about" id="s1">
-
+    <div><a href="resume.pdf" target="_blank"><img class="img-responsive resume" src="images/resume1.png"></a></div>
     <div class="bubbles">
       <div class="col-md-12 col-sm-12 page-header water-font">
         <p class="">Revanth</p>
         <p class="">BysanI</p>
-        <h5></h5>
+         
       </div>    
       <div class="col-md-3 col-sm-4 col-xs-6  "><img src="images/weed2.png"></div>
       <div class="col-md-3 col-sm-4 hidden-xs "><img src="images/weed.png"></div>
@@ -69,8 +68,14 @@
       <div class="col-md-3 hidden-sm hidden-xs "><img src="images/weed2.png"></div>
     </div>
 </div>
-
-	
+<!--***************about module****************-->
+	<div class="row module-about1" id="s11">
+    <div class="module_head"> <h1 style="color:#fcb533; text-align:center;">ABOUT</h1></div>
+    <div>
+      
+      <h3 class="par-set">Hi! my name is Revanth. I am a <span style="color: #fcb533; font-weight:bold; font-style: italic;">"Front End Developer"</span> and <span style="color: #fcb533; font-weight:bold; font-style: italic;">"UI Designer"</span> from Chicago. I love creating beautiful websites and enjoy turning complex problems into simple intutive interface designs by writing clean and elegant code. </h3>
+    </div>
+  </div>
 <!-- ******************************Skills module*****************-->  
   <div class="row module-skills" id="s2">
     <div class="module_head"> <center><h1>SKILLS</h1></center></div>
@@ -80,7 +85,7 @@
     </div>-->
  
     <div class="col-md-4 col-sm-6 ">
-      <img class="small-round margin-auto"src="images/digi1.jpg">
+      <img class="small-round margin-auto"src="images/brush2.jpg">
       <h3 class="align_para"><center>Graphic Design</center></h3>
       <h4>
         The art of styling and problem solving throung the use of image and types.
@@ -95,7 +100,7 @@
     </div>
     <div class="col-md-4 col-sm-6 ">
       <img class="small-round margin-auto"src="images/code.jpg">
-      <h3 class="align_para"><center>Coding</center></h3>
+      <h3 class="align_para"><center>Development</center></h3>
       <h4>
         The art of styling and problem solving throung the use of image and types.
       </h4> 
@@ -123,19 +128,6 @@
     </div>
     
     <!-- skills animations-->
-    
-    <div class="skillset">
-    <div class="container1">  
-      <div class="chart" data-percent="80">HTML5</div>
-      <div class="chart" data-percent="30">CSS3</div>
-      <div class="chart" data-percent="60">SASS</div>
-      <div class="chart" data-percent="50">jQuery</div>
-      <div class="chart" data-percent="11">AngularJS</div>
-      <div class="chart" data-percent="20">BackboneJS</div>
-      <div class="chart" data-percent="30">NodeJS</div>
-      <div class="chart" data-percent="60">PHP</div>
-    </div>
-    </div>
   
 
     <!--*******-->
@@ -145,68 +137,22 @@
 	<div class="row module-work" id="s3">
     <div class="col-md-12 col-sm-12 module_head "> <center><h1>WORK</h1></center></div>
 
-    <!-- image modal ************************************
-    <div class="col-lg-12">
-
-      <div class=" col-md-4 col-sm-12 thumb">
-        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="This is my title" data-caption="Caption" data-image="images/work_images/digi10.jpg" data-target="#image-gallery">
-          <img class="img-responsive" src="images/work_images/digi1.png" alt="Short alt text">
-        </a>
-      </div>
-      <div class=" col-md-4 col-sm-12 thumb">
-        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="The car i dream about" data-caption="Caption" data-image="images/work_images/digi20.jpg" data-target="#image-gallery">
-          <img class="img-responsive" src="images/work_images/digi2.png" alt="A alt text">
-        </a>
-      </div>
-      <div class=" col-md-4 col-sm-12 thumb">
-        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-caption="Caption" data-image="images/work_images/digi30.jpg" target="#image-gallery">
-          <img class="img-responsive" src="images/work_images/digi3.png">
-        </a>
-      </div>
-
-      <div class=" col-md-4 col-sm-12 thumb">
-        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="This is my title" data-caption="Caption" data-image="images/work_images/illu10.jpg" data-target="#image-gallery">
-          <img class="img-responsive" src="images/work_images/illu1.png" alt="Short alt text">
-        </a>
-      </div>
-      <div class=" col-md-4 col-sm-12 thumb">
-        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="The car i dream about" data-caption="Cption" data-image="images/work_images/illu20.png" data-target="#image-gallery">
-          <img class="img-responsive" src="images/work_images/illu2.png" alt="A alt text">
-        </a>
-      </div>
-      <div class=" col-md-4 col-sm-12 thumb">
-        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-caption="Caption" data-image="images/work_images/illu30.jpg" target="#image-gallery">
-          <img class="img-responsive" src="images/work_images/illu3.png">
-        </a>
-      </div>
-                 
-    </div>-->
-
-
-<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title" id="image-gallery-title"></h4>
-      </div>
-
-      <div class="modal-body">
-                <img id="image-gallery-image" class="img-responsive" src="">
-      </div>
-
-      <div class="modal-footer">
-        <div class="col-md-2">
-            <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
-        </div>
-        <div class="col-md-2">
-            <button type="button" id="show-next-image" class="btn btn-default">Next</button>
+    <div class="modal fade" id="image-gallery" tabindex="0" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button><br>
+          </div>
+          <div class="modal-body">
+            <img id="image-gallery-image" class="img-responsive" src="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="show-next-image" class="btn btn-default">Next</button>  
+            <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>            
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
-</div>
 
 
 
@@ -349,7 +295,7 @@ $(document).ready(function(){
 });
 </script>
 
-<!--***********************************-->
+<!--************bubbles****************-->
 <script>
 var $bubbles = $('.bubbles');
 
@@ -446,6 +392,8 @@ $(window).on("resize", function () {
 });
 </script>
 
+
+<!--******************work module image MODAL*******************-->
 <script type="text/javascript">
 $(document).ready(function(){
 
@@ -505,18 +453,5 @@ $(document).ready(function(){
 });
 </script>
 
-<script>
-  $(function() {
-    $('.chart').easyPieChart({
-      scaleColor: "#ecf0f1",
-      lineWidth: 20,
-      lineCap: 'butt',
-      barColor: '#1abc9c',
-      trackColor: "#ecf0f1",
-      size: 160,
-      animate: 500
-    });
-  });
-</script>
 </body>
 </html>
