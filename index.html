@@ -5,7 +5,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Revanth Bysani</title>
-<link href="yourpath/favicon.ico" rel="icon" type="image/x-icon" />
 <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="css/bubbles.css" rel="stylesheet" type="text/css" />
@@ -13,10 +12,7 @@
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script><!--yay-->
-<script>
-
-</script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -26,16 +22,16 @@
   <div class="row ">
       <div class="row menu">
         <div class="col-md-3 col-sm-12 ">
-          <div class="pill"><center><a class="nav-option" href="#s1"><h2 >ABOUT </h2></a></center></div>
+          <div id="menu1" class="pill activePill"><center><a class="nav-option" href="#s1"><h2 >ABOUT </h2></a></center></div>
         </div>
         <div class="col-md-3 col-sm-12">
-          <div class="pill"><center><a class="nav-option" href="#s2"><h2>SKILLS</h2></a></center></div>
+          <div id="menu2" class="pill"><center><a class="nav-option" href="#s2"><h2>SKILLS</h2></a></center></div>
         </div>
         <div class="col-md-3 col-sm-12">
-          <div class="pill"><center><a class="nav-option" href="#s3"><h2>WORKS</h2></a></center></div>
+          <div id="menu3" class="pill"><center><a class="nav-option" href="#s3"><h2>WORKS</h2></a></center></div>
         </div>
         <div class="col-md-3 col-sm-12">
-          <div class="pill"><center><a class="nav-option" href="#s4"><h2>CONTACTS</h2></a></center></div>
+          <div id="menu4" class="pill"><center><a class="nav-option" href="#s4"><h2>CONTACTS</h2></a></center></div>
         </div>
       </div>    
 
@@ -56,7 +52,7 @@
 
 <!-- ******************************Home module*****************-->  
 	<div class="row module-about" id="s0">
-    <div><a href="resume.pdf" target="_blank"><img class="img-responsive resume" src="images/resume1.png"></a></div>
+    <div><a href="resume.pdf" target="_blank"><img title="My Resume" class="img-responsive resume" src="images/resume1.png"></a></div>
     <div class="bubbles">
       <div class="col-md-12 col-sm-12 page-header water-font">
         <p class="">Revanth</p>
@@ -649,6 +645,7 @@ $(document).ready(function(){
     }
 });
 </script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
